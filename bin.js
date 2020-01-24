@@ -2,7 +2,7 @@
 var minimist = require('minimist')
 // var namegiver = require('human-readable-ids').hri
 var dedent = require('dedent')
-var paperslip = require('./index.js')
+var net = require('./index.js')
 
 var help = dedent`
     Usage: airpipe <topic>
@@ -13,7 +13,7 @@ var help = dedent`
 var args = minimist(process.argv.slice(2))
 
 console.log('topic:', args._[0])
-paperslip.connect(args._[0], (err, socket) => {
+net.connect(args._[0], (err, socket) => {
   process.stdin.pipe(socket).pipe(process.stdout)
 })
 

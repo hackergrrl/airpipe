@@ -1,10 +1,10 @@
 {
-  "name": "spacecat",
+  "name": "airpipe",
   "version": "0.0.0",
   "description": "create a stdin/stdout pipe easily over wifi or internet",
   "main": "index.js",
   "bin": {
-    "spacecat": "bin.js"
+    "airpipe": "bin.js"
   },
   "keywords": [
     "p2p",
@@ -12,7 +12,7 @@
     "dat",
     "dht"
   ],
-  "author": "",
+  "author": "some hackrr perhaps",
   "license": "ISC",
   "dependencies": {
     "@hyperswarm/network": "0.0.4",
