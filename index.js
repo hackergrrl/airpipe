@@ -19,7 +19,7 @@ exports.connect = function (topic, cb) {
   })
 
   net.on('connection', (socket, details) => {
-    if (!details.peer) return
+    if (details.peer)
     console.log('connected to', details.peer.host, details.peer.port)
     cb(null, socket)
 
