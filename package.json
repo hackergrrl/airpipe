@@ -1,6 +1,6 @@
 {
   "name": "airpipe",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "create a stdin/stdout pipe easily over wifi or internet",
   "main": "index.js",
   "bin": {
