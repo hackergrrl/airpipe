@@ -61,6 +61,20 @@ you could also use lower quality audio for slower connections:
 $ arecord -r 8000 -f U8 | airpipe chat | aplay -r 8000 -f U8
 ```
 
+### stream live video of your screen
+
+(This example is Linux-only!)
+
+In one terminal:
+```
+$ ffmpeg -f alsa -ac 2 -f x11grab -r 25 -i :0.0 -vcodec mpeg2video -ar 44100 -s wvga -y /tmp/video.mpg
+```
+
+In another:
+```
+$ airpipe screen < /tmp/video.mpg
+```
+
 ## Credits
 
 This code forked from @cblgh's [paperslip](https://github.com/cblgh/paperslip)!
