@@ -12,22 +12,20 @@ function initiate (topic, opts) {
   return net
 }
 
-exports.connect = function (topic) {
-  var stream = duplexify()
+exports.connect = function (topic, cb) {
   var net = initiate(topic, {
-    lookup: true // find & connect to peers
+    lookup: true, // find & connect to peers
+    announce: true
   })
 
   console.log('ready')
   net.on('connection', (socket, details) => {
     console.log('conn found', details)
-    stream.setReadable(socket)
-    stream.setWritable(socket)
+    cb(null, socket)
 
     // we have received everything
     socket.on('end', function () {
       net.leave(topic)
     })
   })
-  return stream
 }
