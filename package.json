@@ -1,0 +1,27 @@
+{
+  "name": "spacecat",
+  "version": "0.0.0",
+  "description": "create a stdin/stdout pipe easily over wifi or internet",
+  "main": "index.js",
+  "bin": {
+    "aircat": "bin.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "p2p",
+    "share",
+    "dat",
+    "dht"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hyperswarm/network": "0.0.4",
+    "dedent": "^0.7.0",
+    "duplexify": "^3.6.1",
+    "hyperswarm": "^2.0.3",
+    "minimist": "^1.2.0"
+  }
+}
