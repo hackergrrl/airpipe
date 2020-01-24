@@ -1,4 +1,4 @@
-# spacecat
+# airpipe
 
 > Create a stdin/stdout pipe easily over wifi or internet.
 
@@ -10,12 +10,12 @@ addresses. Just a direct pipe to another peer.
 
 In one terminal:
 ```sh
-spacecat testshare
+airpipe testshare
 ```
 
 In another terminal:
 ```sh
-echo "hello from another terminal" | spacecat testshare
+echo "hello from another terminal" | airpipe testshare
 ```
 
 ## Credits
