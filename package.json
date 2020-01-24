@@ -4,10 +4,7 @@
   "description": "create a stdin/stdout pipe easily over wifi or internet",
   "main": "index.js",
   "bin": {
-    "aircat": "bin.js"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "spacecat": "bin.js"
   },
   "keywords": [
     "p2p",
