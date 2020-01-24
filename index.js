@@ -18,9 +18,9 @@ exports.connect = function (topic, cb) {
     announce: true
   })
 
-  console.log('ready')
   net.on('connection', (socket, details) => {
-    console.log('conn found', details)
+    if (!details.peer) return
+    console.log('connected to', details.peer.host, details.peer.port)
     cb(null, socket)
 
     // we have received everything

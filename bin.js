@@ -12,7 +12,6 @@ var help = dedent`
 `
 var args = minimist(process.argv.slice(2))
 
-console.log('topic:', args._[0])
 net.connect(args._[0], (err, socket) => {
   process.stdin.pipe(socket).pipe(process.stdout)
 })
