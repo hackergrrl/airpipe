@@ -77,7 +77,8 @@ $ airpipe screen < /tmp/video.mpg
 
 ## Credits
 
-This code forked from @cblgh's [paperslip](https://github.com/cblgh/paperslip)!
+- this code forked from @cblgh's [paperslip](https://github.com/cblgh/paperslip)!
+- networking code provided by [hyperswarm](https://github.com/hyperswarm)
 
 ## License
 
