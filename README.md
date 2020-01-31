@@ -20,6 +20,18 @@ $ echo "hello from another terminal" | airpipe testshare
 
 ## Fun Things You Can Do
 
+### share files
+
+on one side:
+```
+$ airpipe < file.tar.gz
+```
+
+and on the other:
+```
+$ airpipe > file.tar.gz
+```
+
 ### stream music that others can listen to
 
 ```
@@ -36,6 +48,11 @@ $ script -f /tmp/log
 and in another terminal:
 ```
 $ tail -F /tmp/log | airpipe my-terminal
+```
+
+and then on the remote side just type
+```
+airpipe
 ```
 
 ### live text chat
