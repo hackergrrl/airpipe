@@ -4,7 +4,7 @@
 
 The magic part is that the program will find the other person over the local
 network or even the internet automatically, without needing to exchange IP
-addresses. Just a direct pipe to another peer.
+addresses, based on a topic string. Just a direct pipe to another peer.
 
 ## Usage
 
