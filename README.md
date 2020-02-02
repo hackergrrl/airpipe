@@ -18,6 +18,14 @@ In another terminal:
 $ echo "hello from another terminal" | airpipe testshare
 ```
 
+In this example, `testshare` is the topic string that each peer uses to find the other. Anybody else online using the same topic string will also connect though, so choose something unlikely to collide with other users' use.
+
+You can generate a random topic string (on POSIX systems like Linux, BSD, MacOS) with
+```
+$ xxd -ps -g 0 -l 12 /dev/urandom
+166c3e056808ed18b5d8515a
+```
+
 ## Fun Things You Can Do
 
 ### share files
