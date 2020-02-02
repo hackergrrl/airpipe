@@ -32,12 +32,12 @@ $ xxd -ps -g 0 -l 12 /dev/urandom
 
 on one side:
 ```
-$ airpipe < file.tar.gz
+$ airpipe topic < file.tar.gz
 ```
 
 and on the other:
 ```
-$ airpipe > file.tar.gz
+$ airpipe topic > file.tar.gz
 ```
 
 ### stream music that others can listen to
